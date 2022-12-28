@@ -13,13 +13,7 @@ function App() {
     {
       title: 'Before The Big Bang',
       author: 'Laura'
-    }, 
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
+    }
   ])
 
   const displayBooks = books.map(book => {

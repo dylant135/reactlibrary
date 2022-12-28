@@ -29,3 +29,32 @@ h1, h2, h3 {
   background-color: #A979EF;
   border: 2px solid black;
 }
+
+.form {
+  background-color: #306F9F;
+  width: max-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 27px;
+}
+
+.openForm {
+  width: 100vw;
+  text-align: center;
+}
+
+.formbtn {
+  padding: 5px;
+  font-size: 1.3em;
+  margin: 10px 0;
+  background-color: #77BFCB;
+}
+
+.formInput {
+  padding: 5px;
+  font-size: 1.3em;
+  margin: 7px;
+}
