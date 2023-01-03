@@ -7,7 +7,7 @@ export default function Book(props) {
         <div className="book">
             <h2 className="title">{props.title}</h2>
             <h3 className="author">{props.author}</h3>
-            <p className="desription">{props.desription}</p>
+            <p className="description">{props.description}</p>
             <button className="deletebtn" type='button' onClick={() => props.deleteBook(index)}>Delete</button>
         </div>
     )

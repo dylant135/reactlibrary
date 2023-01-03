@@ -26,7 +26,7 @@ function App() {
         key={book.id}
         title={book.title}
         author={book.author}
-        desription={book.desription}
+        description={book.description}
         id={book.id}
         deleteBook={deleteBook}
       />
@@ -71,13 +71,14 @@ function deleteBook(index) {
 
   return (
     <div className="App">
-      <h1>Library</h1>
+      <h1>Dylan's Library</h1>
       <AddBook
         setBooks={setBooks}
         submitF={submitF}
         formData={formData}
         setFormData={setFormData}
       />
+      <h1>Book Shelf</h1>
       <div className='bookShelf'>
         {displayBooks}
       </div>

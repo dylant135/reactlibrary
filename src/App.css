@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 .App {
-  background-color: #652FB6;
+  background-color: #CE85A7;
 }
 
 h1, h2, h3 {
@@ -17,6 +18,9 @@ h1, h2, h3 {
   margin: 7px;
   padding: 5px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bookShelf {
@@ -31,7 +35,7 @@ h1, h2, h3 {
 }
 
 .form {
-  background-color: #306F9F;
+  background-color: #998ADD;
   width: max-content;
   margin: auto;
   display: flex;
@@ -47,14 +51,48 @@ h1, h2, h3 {
 }
 
 .formbtn {
+  margin: auto;
+}
+
+.formbtn, .submit {
   padding: 5px;
   font-size: 1.3em;
   margin: 10px 0;
   background-color: #77BFCB;
 }
 
+.formbtn:hover, .submit:hover {
+  background-color: #B0DAED;
+}
+
 .formInput {
   padding: 5px;
   font-size: 1.3em;
   margin: 7px;
+}
+
+.deletebtn {
+  padding: 7px;
+  margin: 7px 0;
+  background-color: crimson;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.deletebtn:hover {
+  background-color: #EA6E77;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.author {
+  font-size: 1.3em;
+}
+
+.description {
+  font-style: italic;
 }
