@@ -47,7 +47,10 @@ export default function AddBook(props) {
                         onChange={handleChange}
                         className='formInput'
                     />
-                    <button className="submit" type='button' onClick={props.submitF}>Add Book</button>
+                    <button className="submit" type='button' onClick={() => {
+                        props.submitF()
+                        toggleIsActive()
+                    }}>Add Book</button>
                 </form>
             </div>}
         </div>

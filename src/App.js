@@ -45,14 +45,28 @@ function App() {
             }
         ])
     })
+    setFormData(
+      {
+        title: '',
+        author: '',
+        description: ''
+    })
     setCount(count + 1)
 }
 
 function deleteBook(index) {
+  /*
   const bookList = [...books]
-  const reducedList = bookList.splice(index)
+  const reducedList = bookList.splice(index, 1)
   localStorage.setItem('books', JSON.stringify(reducedList))
   setBooks(reducedList)
+*/
+  const reducedList = books.filter(book => {
+    return book.id !== index
+  })
+  localStorage.setItem('books', JSON.stringify(reducedList))
+  setBooks(reducedList)
+
 }
 
   return (
